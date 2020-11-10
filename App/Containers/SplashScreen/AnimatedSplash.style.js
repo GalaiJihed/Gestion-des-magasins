@@ -43,11 +43,13 @@ export const _dynamicLogoStyle = (
 export default {
     container: {
         flex: 1,
+
     },
     containerGlue: {
         flex: 1,
         alignContent: "center",
         justifyContent: "center",
+
     },
     flex: {
         flex: 1,
@@ -55,5 +57,6 @@ export default {
     logoStyle: {
         alignItems: "center",
         justifyContent: "center",
+        borderRadius:100
     },
 };

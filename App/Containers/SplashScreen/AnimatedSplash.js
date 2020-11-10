@@ -180,6 +180,7 @@ AnimatedSplash.propTypes = {
     backgroundColor: PropTypes.string,
     isLoaded: PropTypes.bool.isRequired,
     disableBackgroundImage: PropTypes.bool,
+
     logoImage: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.number,

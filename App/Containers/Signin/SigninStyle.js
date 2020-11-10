@@ -12,8 +12,8 @@ export default StyleSheet.create({
 		padding: 5,
 	},
 	textInput: {
-		marginVertical: 10,
-		backgroundColor: 'rgba(255,182,193,0.5)',
+
+
 	},
 	image: {
 		flex: 1,
@@ -24,20 +24,25 @@ export default StyleSheet.create({
 		fontStyle: 'italic',
 		textDecorationLine: 'underline',
 	},
+	  title:{alignSelf:"center",
+            fontSize:30,fontStyle:"italic",
+            textDecorationLine:"underline"
+        },
 	logo: {
 		alignSelf: 'center',
 		top: 50,
 		marginVertical: 20,
 		width: 200,
 		height: 200,
+	    borderRadius:100
 	},
 	button: {
 		marginVertical: 20,
 		height: 57,
 		justifyContent: 'center',
 		alignItems: 'center',
-
-		backgroundColor: '#8CCBFF',
+        borderRadius:20,
+		backgroundColor: '#5c87dd',
 	},
 	formContainer: {
 		alignSelf: 'center',

@@ -1,38 +1,45 @@
 
 
+
 import React from 'react';
-import {StyleSheet} from 'react-native';
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-import SplashScreen from './Containers/SplashScreen/SplashScreen';
+import stores from './Stores';
 import AppContainer from './Navigators/AppNavigator';
+import {inject, observer, Provider} from 'mobx-react';
 const theme = {
   ...DefaultTheme,
-  roundness: 2,
+  roundness: 5,
   colors: {
     ...DefaultTheme.colors,
-    primary: 'white',
+    primary: 'black',
+      background:'#00c0fb',
     accent: '#f1c40f',
-    text:'white',
+    text:'black',
     placeholder:'black'
   },
+
 };
+
 export default class App extends React.Component {
-  render() {
+
+
+    render() {
     return (
         /**
          * @see https://github.com/reduxjs/react-redux/blob/master/docs/api/Provider.md
          */
-
+        <Provider {...stores}>
         <PaperProvider theme={theme}>
           <AppContainer
               ref={nav => {
                 this.navigator = nav;
+
               }}
+
           />
 
         </PaperProvider>
-
+        </Provider>
     )
   }
 }
